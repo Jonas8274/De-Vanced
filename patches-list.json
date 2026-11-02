@@ -1,0 +1,2296 @@
+{
+  "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
+  "version": "1.6.3-dev.3",
+  "patches": [
+    {
+      "name": "AMOLED dark theme",
+      "description": "Makes Facebook's native dark themes use pure-black AMOLED surfaces.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "ResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Add 'Give Kudos' button to 'Group Activity'",
+      "description": "Adds a button that triggers the same action as shaking your phone would.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "ResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Add activity export",
+      "description": "Adds an \"Export GPX\" item to the activity overflow menu, which saves the activity's GPS track as a GPX file in Downloads/Strava.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Add media download",
+      "description": "Extends the full-screen media viewer menu with items to copy or open their URLs or download them directly.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Add route export",
+      "description": "Allows exporting and downloading Strava routes as GPX or TCX files directly from the app.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Always allow deep-linking",
+      "description": "Open Amazon links, even if the app is not set to handle Amazon links.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mShop.android.shopping",
+          "name": "Amazon Shopping",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Block Snowplow tracking",
+      "description": "Blocks Snowplow analytics. See https://snowplow.io for more information.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Bypass login",
+      "description": "Allows the use of the app after its discontinuation.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.adobe.photoshopmix",
+          "name": "Photoshop Mix",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#31A8FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Clean Home feed",
+      "description": "Hides Home Reels panels, the Stories tray, and exact recommendation feed units.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Clone app",
+      "description": "Changes the app package name to allow installing the same app multiple times. By default \".morphe\" is appended to the package name. Each cloned install must use a unique package name. Cloning does not work with all apps and using this patch may cause app crashes or other unexpected behavior.",
+      "default": false,
+      "dependencies": [],
+      "compatiblePackages": null,
+      "options": [
+        {
+          "key": "packageName",
+          "title": "Package name",
+          "description": "The name of the package to rename the app to.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "Default",
+          "values": {
+            "Default": "Default"
+          }
+        },
+        {
+          "key": "updatePermissions",
+          "title": "Update permissions",
+          "description": "Update compatibility receiver permissions. Enabling this can fix installation errors, but this can also break features in certain apps.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "updateProviders",
+          "title": "Update providers",
+          "description": "Update provider names declared by the app. Enabling this can fix installation errors, but this can also break features in certain apps.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "De-Vanced Settings",
+      "description": "Adds De-Vanced controls to Facebook Profile Settings.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "ResourcePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable Quick Edit",
+      "description": "Prevents the Quick Edit prompt from popping up.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable ads",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.myprog.hexedit",
+          "name": "Hex Editor",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#607D8B",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable all ads",
+      "description": "Blocks Facebook sponsored feed units, Stories ads, Reels ads, Marketplace ads, and Instant Games/Audience Network ads.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable analytics and telemetry",
+      "description": "Blocks Facebook Analytics2, Falco, Papaya, QPL, XAnalytics, crash/trace uploads, and attribution trackers.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable auto refresh",
+      "description": "Keeps the current feed position when you return to Facebook within ten minutes.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable typing indicator",
+      "description": "Disables the indicator while typing a message.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Download Media",
+      "description": "Adds a native-styled Download media action to Facebook Reels and Stories menus.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable DCIM folders backup control",
+      "description": "Disables always on backup for the Camera and other DCIM folders, allowing you to control backup for each folder individually. This will make the app default to having no folders backed up.",
+      "default": false,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.photos",
+          "name": "Google Photos",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC3F3C",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.92.0.977185651",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.80.0.929302933",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable password login",
+      "description": "Re-enables password login after having used an OTP code.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Facebook signature compatibility",
+      "description": "Keeps Facebook first-party navigation working after signing with the established De-Vanced key.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Fix selected account persistence",
+      "description": "Prevents Google Photos from clearing the selected account after cold start when using MicroG.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.photos",
+          "name": "Google Photos",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC3F3C",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.92.0.977185651",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.80.0.929302933",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Force enable FreePhone",
+      "description": "Enables the FreePhone menu in the navigation drawer even on devices that do not support eSIM.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "de.gmx.mobile.android.mail",
+          "name": "GMX Mail",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#003399",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "GmsCore support",
+      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "default": true,
+      "dependencies": [
+        "ResourcePatch",
+        "ResourcePatch",
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.photos",
+          "name": "Google Photos",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC3F3C",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.92.0.977185651",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.80.0.929302933",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide Ads",
+      "description": "Hides ad banners between chats.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.viber.voip",
+          "name": "Viber",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#7360F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "25.9.2.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "26.1.2.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide Facebook buttons",
+      "description": "Hides buttons and shortcuts that open Facebook.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide OneDrive migration",
+      "description": "Hides the OneDrive migration prompt when opening Microsoft Office Lens.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.microsoft.office.officelens",
+          "name": "Microsoft Lens",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#D73E01",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "16.0.19628.20008",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide Premium upgrade button",
+      "description": "Hides the Premium upgrade button in the navigation drawer.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "de.gmx.mobile.android.mail",
+          "name": "GMX Mail",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#003399",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.drinkplusplus.angulus",
+          "name": "Angulus",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#2196F3",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.cricbuzz.android",
+          "name": "Cricbuzz",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#009270",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "6.24.01",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": "Hides sponsored ads.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "de.gmx.mobile.android.mail",
+          "name": "GMX Mail",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#003399",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.letterboxd.letterboxd",
+          "name": "Letterboxd",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#00B020",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": "Hide ads and sponsored articles in list pages and remove pre-roll ads on videos.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "nl.sanomamedia.android.nu",
+          "name": "NU.nl",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#E2001A",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": "Hides all video ads.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.peacocktv.peacockandroid",
+          "name": "Peacock TV",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#000000",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.9.21",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "jp.pxv.android",
+          "name": "Pixiv",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0096FA",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "6.141.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "6.196.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "6.202.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide distractions",
+      "description": "Hides elements that are not essential.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "upselling",
+          "title": "Upselling",
+          "description": "Elements that suggest you subscribe.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "promo",
+          "title": "Promotions",
+          "description": "Elements that promote features, challenges, clubs, etc.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "followSuggestions",
+          "title": "Who to Follow",
+          "description": "Popular athletes, followers, people near you etc.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "challengeSuggestions",
+          "title": "Suggested Challenges",
+          "description": "Random challenges Strava wants you to join.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "joinChallenge",
+          "title": "Join Challenge",
+          "description": "Challenges your follows have joined.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "joinClub",
+          "title": "Joined a club",
+          "description": "Clubs your follows have joined.",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "activityLookback",
+          "title": "Activity lookback",
+          "description": "Your activity from X years ago",
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Hide inbox ads",
+      "description": "Hides ads in inbox.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide inbox stories and notes tray",
+      "description": "Hides the stories and notes horizontal tray at the top of the inbox.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide inbox subtabs",
+      "description": "Hides Home and Channels tabs between active now tray and chats.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide navigation buttons",
+      "description": "Permanently hides navigation bar buttons, such as Explore and Marketplace.",
+      "default": false,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.viber.voip",
+          "name": "Viber",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#7360F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "25.9.2.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "26.1.2.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "hideExplore",
+          "title": null,
+          "description": null,
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hidePay",
+          "title": null,
+          "description": null,
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideCamera",
+          "title": null,
+          "description": null,
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        },
+        {
+          "key": "hideMarketplace",
+          "title": null,
+          "description": null,
+          "required": true,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Hide update popup",
+      "description": "Prevents the update popup from showing up.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.microblink.photomath",
+          "name": "Photomath",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#D23F3F",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Material You theme",
+      "description": "Tints Facebook's dark theme with the phone's wallpaper palette.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "BytecodePatch",
+        "ResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Media quality controls",
+      "description": "Applies De-Vanced resolution choices to Facebook Reels and video Stories.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Messenger install compatibility",
+      "description": "Namespaces Facebook's shared signature permissions so official Messenger installs beside a re-signed Facebook build.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Open Marketplace on launch",
+      "description": "Opens Marketplace when Facebook is started from its launcher icon.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Open links externally",
+      "description": "Always opens links in your default browser instead of the in-app browser, regardless of the in-app setting.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Optimize Facebook",
+      "description": "Suppresses explicit GC stalls, trims extension caches under memory pressure, and reduces render-time reflection.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Overwrite media upload parameters",
+      "description": "Overwrites the compression, resize and trim media (images and videos) parameters returned by Strava's server before upload.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "compressionQuality",
+          "title": "Compression quality (percent)",
+          "description": "This is used as the JPEG quality setting (≤ 100).",
+          "required": false,
+          "type": "kotlin.Int",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "maxDuration",
+          "title": "Max duration (seconds)",
+          "description": "The maximum length (≤ 3600) of a video before it gets trimmed.",
+          "required": false,
+          "type": "kotlin.Long",
+          "default": null,
+          "values": null
+        },
+        {
+          "key": "maxSize",
+          "title": "Max size (pixels)",
+          "description": "The image gets resized so that the smaller dimension (width/height) does not exceed this value (≤ 10000).",
+          "required": false,
+          "type": "kotlin.Int",
+          "default": null,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Picture-in-picture",
+      "description": "Extends Facebook picture-in-picture to every supported video surface.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Prevent log upload",
+      "description": "Avoid uploading logs when the application crashes.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mp3",
+          "name": "Amazon Music",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.36.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Prevent native JVM invalidation",
+      "description": "Prevents Microsoft Lens's native signature check from clearing the JavaVM pointer and causing delayed crashes after the APK is re-signed.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.microsoft.office.officelens",
+          "name": "Microsoft Lens",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#D73E01",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "16.0.19628.20008",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Reels 2x speed",
+      "description": "Adds hold-to-speed and slide-to-lock gestures for Shorts.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.katana",
+          "name": "Facebook",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#1877F2",
+          "signatures": [
+            "e3f9e1e0cf99d0e56a055ba65e241b3399f7cea524326b0cdd6ec1327ed0fdc1",
+            "911d604446084ca7f4760b775bfc160fa8702441240a7258645d7a72c4312d27"
+          ],
+          "targets": [
+            {
+              "version": "580.0.0.51.74",
+              "versionCodes": {
+                "ARM64_V8A": 475019344
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove Meta AI",
+      "description": "Removes UI elements related to Meta AI.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove ads",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "net.binarymode.android.irplus",
+          "name": "irplus",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FF5722",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove device restrictions",
+      "description": "Removes restrictions from using the app on any device. Requires mounting patched app over original.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.recorder",
+          "name": "Google Recorder",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#4285F4",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove play limits",
+      "description": "Disables purchase nagging and playback limits of not purchased tracks.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.bandcamp.android",
+          "name": "Bandcamp",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#629AA9",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove popular search time limit",
+      "description": "Removes the 7-day trial countdown on popular search results so the free popular-search preview (30 works) never expires.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "jp.pxv.android",
+          "name": "Pixiv",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0096FA",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "6.141.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "6.196.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "6.202.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Rename shared permissions",
+      "description": "Rename certain permissions shared across Amazon apps. Applying this patch can fix installation errors, but can also break features in certain apps.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mp3",
+          "name": "Amazon Music",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.36.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Show K1 token(s)",
+      "description": "Shows the K1 authentication token(s) in a dialog and logs it to logcat for pairing with GadgetBridge without requiring root access.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.nothing.smartcenter",
+          "name": "Nothing X",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#000000",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Skip ads",
+      "description": "Skip ads between the tracks.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mp3",
+          "name": "Amazon Music",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.36.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Skip ads",
+      "description": "Automatically skips ads.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.disney.disneyplus",
+          "name": "Disney+",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#09A9B8",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof certificate",
+      "description": "Spoofs the X-Android-Cert header to allow push messages.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "nl.sanomamedia.android.nu",
+          "name": "NU.nl",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#E2001A",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof device ID",
+      "description": "Spoofs device ID to mitigate manual bans by developers.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.microblink.photomath",
+          "name": "Photomath",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#D23F3F",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof features",
+      "description": "Spoofs the device to enable Google Pixel exclusive features, including unlimited storage.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.google.android.apps.photos",
+          "name": "Google Photos",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC3F3C",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.92.0.977185651",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.80.0.929302933",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "featuresToEnable",
+          "title": "Features to enable",
+          "description": "Google Pixel exclusive features to enable. Features up to Pixel XL enable the unlimited storage feature.",
+          "required": true,
+          "type": "kotlin.collections.List<kotlin.String>",
+          "default": [
+            "com.google.android.apps.photos.NEXUS_PRELOAD",
+            "com.google.android.apps.photos.nexus_preload"
+          ],
+          "values": null
+        },
+        {
+          "key": "featuresToDisable",
+          "title": "Features to disable",
+          "description": "Google Pixel exclusive features to disable.Features after Pixel XL may have to be disabled for unlimited storage depending on the device.",
+          "required": true,
+          "type": "kotlin.collections.List<kotlin.String>",
+          "default": [
+            "com.google.android.apps.photos.PIXEL_2017_PRELOAD",
+            "com.google.android.apps.photos.PIXEL_2018_PRELOAD",
+            "com.google.android.apps.photos.PIXEL_2019_MIDYEAR_PRELOAD",
+            "com.google.android.apps.photos.PIXEL_2019_PRELOAD",
+            "com.google.android.feature.PIXEL_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2017_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2018_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2019_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2019_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2020_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2020_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2021_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2021_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2022_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2022_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2023_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2023_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2024_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2024_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2025_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2025_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2026_MIDYEAR_EXPERIENCE",
+            "com.google.android.feature.PIXEL_2026_EXPERIENCE"
+          ],
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Spoof package version",
+      "description": "Sets a very high version code so the Play Store treats the app as already up to date and never offers an update.",
+      "default": false,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.facebook.orca",
+          "name": "Messenger",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#0866FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "573.0.0.44.88",
+              "versionCodes": {
+                "ARMEABI_V7A": 344611781,
+                "ARM64_V8A": 344611864
+              },
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "versionCode",
+          "title": "Version code",
+          "description": "The version code to set. Must be higher than the Play Store version to suppress updates. Defaults to the maximum value.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "2147483647",
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Unlimited track skipping",
+      "description": "Unlocks the ability to skip tracks without restriction.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mp3",
+          "name": "Amazon Music",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.36.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Unlimited",
+      "description": "Unlock Music Unlimited features.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.amazon.mp3",
+          "name": "Amazon Music",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#FF9900",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "26.36.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock app icons",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.letterboxd.letterboxd",
+          "name": "Letterboxd",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#00B020",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock plus",
+      "description": null,
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.microblink.photomath",
+          "name": "Photomath",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#D23F3F",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock pro",
+      "description": null,
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "ginlemon.iconpackstudio",
+          "name": "Icon Pack Studio",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#F4287D",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "2.2 build 016",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock subscription features",
+      "description": "Unlocks \"Routes\", \"Matched Runs\" and \"Segment Efforts\".",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.strava",
+          "name": "Strava",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FC6925",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "477.14",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
+}
