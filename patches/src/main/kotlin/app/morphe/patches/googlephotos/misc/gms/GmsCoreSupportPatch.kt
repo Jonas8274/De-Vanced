@@ -4,6 +4,7 @@
  */
 package app.morphe.patches.googlephotos.misc.gms
 
+import app.morphe.patcher.patch.resourcePatch
 import app.morphe.patches.googlephotos.misc.extension.sharedExtensionPatch
 import app.morphe.patches.googlephotos.misc.gms.Constants.MORPHE_PHOTOS_PACKAGE_NAME
 import app.morphe.patches.googlephotos.misc.gms.Constants.PHOTOS_PACKAGE_NAME
@@ -11,6 +12,24 @@ import app.morphe.patches.googlephotos.misc.login.selectedAccountPatch
 import app.morphe.patches.shared.compat.AppCompatibilities
 import app.morphe.patches.shared.misc.gms.gmsCoreSupportPatch
 import app.morphe.util.returnEarly
+import org.w3c.dom.Element
+
+// Must be declared above gmsCoreSupportPatch, because top-level values initialize in file order.
+// Disables Google's "This device isn't Play Protect certified" screen, which shows up in the
+// patched app because the patched package isn't recognized as certified.
+private val disableUncertifiedDeviceActivityPatch = resourcePatch {
+    execute {
+        document("AndroidManifest.xml").use { document ->
+            val activities = document.getElementsByTagName("activity")
+            for (i in 0 until activities.length) {
+                val activity = activities.item(i) as Element
+                if (activity.getAttribute("android:name").endsWith("UncertifiedDeviceActivity")) {
+                    activity.setAttribute("android:enabled", "false")
+                }
+            }
+        }
+    }
+}
 
 @Suppress("unused")
 val gmsCoreSupportPatch = gmsCoreSupportPatch(
@@ -25,7 +44,7 @@ val gmsCoreSupportPatch = gmsCoreSupportPatch(
         IsGooglePlayServicesAvailableFingerprint.methodOrNull?.returnEarly(0)
     },
 ) {
-    dependsOn(selectedAccountPatch)
+    dependsOn(selectedAccountPatch, disableUncertifiedDeviceActivityPatch)
     compatibleWith(AppCompatibilities.GOOGLE_PHOTOS)
 }
 
